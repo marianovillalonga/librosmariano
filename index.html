@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Book libros</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns container-flex">
+                    <h1 class="align">
+                            <img src="img/logo-d.png" alt="logo" class="logo" >
+                        D-Books
+                    </h1>
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" alt="">
+                            <div id="carrito">    
+                                <p class="vacio">carrito vacio</p>
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Libros</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito"
+                                class="button u-full-width">vaciar carrito</a>
+                                <a href="#" id="pagar"
+                                class="button button-p u-full-width">pagar</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container"> 
+            <div class="row">  
+                <div class="six columns">
+                    <div class="contenido-hero" id="titulo">
+                        <h2>Los mejores libros, a mejores precios!</h2>
+                        <p>Formato digital y fisico</p>
+                        <form>
+                            <input class="u-full-width form-control" type="text" placeholder="¿Que te gustaria leer?" id="buscador">
+                            <button type="submit" class="submit-buscador" id="buscar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p class="query">+100 editoriales diferentes<br>
+                     de todo el mundo!</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p class="query">Libros en <br>
+                    +25 idiomas</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p class="query">Todos los generos <br>
+                    que busques, aca estan!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="lista-libros">
+        <div class="book-list">
+            <h2 class="text-center contenido-hero encabezado"> Resultados de su busqueda!</h2>
+            <div id="resultados" >
+              <div class="row"> 
+
+
+
+                
+              </div>
+            </div>
+        </div>
+        <h1 class="encabezado">Clasicos en Linea</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/el-quijote.jpg" class="img-book u-full-width">
+                    <div class="info-card">
+                        <h4>Don Quijote de la Mancha</h4>
+                        <p>MIGUEL DE CERVANTES</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3000 <span class="u-pull-right">$1500</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/divina-comedia.jpg" class="img-book u-full-width">
+                    <div class="info-card">
+                        <h4>Divina Comedia</h4>
+                        <p>Dante Alighieri</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/respuestas-breves.jpg" class="img-book u-full-width">
+                    <div class="info-card">
+                        <h4>Breves respuestas a las grandes preguntas</h4>
+                        <p>Stephen Hawking</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/principito.jpg" class="img-book u-full-width">
+                    <div class="info-card">
+                        <h4>El Principito</h4>
+                        <p>Antoine De Saint-Exuperi</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/vuelta-al-mundo.jpg" class="img-book u-full-width">
+                    <div class="info-card">
+                        <h4>La vuelta al mundo en 80 dias</h4>
+                        <p>Julio Verne</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/cien-años.jfif" class="img-book u-full-width">
+                    <div class="info-card">
+                        <h4>Cien años de soledad</h4>
+                        <p>Gabriel Garcia Márquez</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$50 <span class="u-pull-right">$15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer"> 
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="four columns">
+                    <nav class="menu">
+                        <a class="enlace" href="#">Pedidos a domicilio</a>
+                        <a class="enlace" href="#">Pedidos en linea</a>
+                        <a class="enlace" href="#">Pedidos por telefono</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav class="menu">
+                        <a class="enlace" href="#">Ubicacion</a>
+                        <a class="enlace" href="#" >Telefono</a>
+                        <a class="enlace" href="#">Catalogo</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
